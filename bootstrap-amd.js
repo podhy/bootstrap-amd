@@ -16,24 +16,10 @@ function mkDir(dir) {
 
 function convert(content)
 {
-    content = "\n\
-(function (factory) {\n\
-    'use strict';\n\
-    if (typeof define === 'function' && define.amd) {\n\
-        // Register as an anonymous AMD module:\n\
-        define([\n\
-            'jquery'\n\
-        ], factory);\n\
-    } else {\n\
-        // Browser globals:\n\
-        factory(\n\
-            window.jQuery\n\
-        );\n\
-    }\n\
-}(\n\
-" + content;
-    content = content.replace(/\(.*jQuery\);\s$/m, '));')
-    content = content.replace(/\+function/, 'function');
+    content = "define(['jquery'], function (jQuery) {\n"
+                + content
+                + "\n});";
+
     return content;
 }
 
