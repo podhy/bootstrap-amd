@@ -1,0 +1,20 @@
+{
+    "name": "bootstrap-amd",
+    "version": "0.0.1",
+    "author": {
+        "name": "Jakub Podhorsky",
+        "email": "jakub@podhy.cz"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/podhy/bootstrap-amd.git"
+    }
+    "main": "bootstrap-amd",
+    "engines": {
+        "node": ">=0.8.0"
+    },
+    "readme": "ERROR: No README data found!",
+    "dependencies": {
+        "glob": "~3.2"
+    }
+}
